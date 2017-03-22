@@ -1,0 +1,7 @@
+open with some descriptivev lead with some physical actionin the lab
+
+or some anecdote about physical work being done by someone else
+
+-explain 6DOF pose estimation, cite information from the articles
+-talk about motion tracking
+-bring in disney and tennis

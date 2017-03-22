@@ -1,0 +1,7 @@
+import Serial
+ser = serial.Serial('/dev/tty.usbserial', 9600)
+
+
+while true:
+	if(ser.in_waiting > 0):
+		print(ser.read())
