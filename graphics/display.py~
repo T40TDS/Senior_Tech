@@ -150,7 +150,7 @@ while run:
         pygame.draw.line(screen,blue,applyTransformation((0,0+10*n),deltax,deltay,scaleFactor),applyTransformation((width,0+10*n),deltax,deltay,scaleFactor))
 
     #for imsomature in balls:
-#    balls[imsomature].move(dt)
+    #    balls[imsomature].move(dt)
 #        balls[imsomature].draw()
 #    for c in balls:
 #        if balls[c].getLocation()[0] > 800 or  balls[c].getLocation()[1] > 400 or balls[c].getSpeed()[1] == 0 or balls[c].getSpeed()[0] == 0:

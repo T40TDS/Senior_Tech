@@ -1,0 +1,29 @@
+import serial
+import time
+ser = serial.Serial('COM7', 9600)
+accel_values = []
+velValues = []
+vel = []
+while True:
+    accel = ser.readline()
+    accel = accel.decode("UTF-8")
+    accel = accel.strip("\r\n")
+    accel = float(accel)
+    accel = accel - 540
+
+    accel_values.append(accel)
+    if (len(accel_values) > 1):
+        if(abs(accel_values[1]-accel_values[0]) > 10):
+            vel[0] += (dt)*((accel_values[0]+accel_values[1])/2.0)
+
+           # graphPoints.append((startingPoint,100-accel_values[0]))
+           # graphPoints.append((startingPoint + dt, 100-accel_values[1]))
+           # startingPoint = startingPoint + dt
+       # if(startingPoint>800):
+        #    startingPoint = 0
+         #   graphPoints = []
+
+        accel_values = []
+   
+   
+    
